@@ -6,9 +6,9 @@
     <title>Recipe Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <picture>
+  <body id="body">
+    <header id="header">
+      <picture id="header--picture">
         <source
           media="(max-width: 768px)"
           srcset="./assets/mobile-image-omelette.jpg"
@@ -22,93 +22,97 @@
           alt="Vegetable-filled omelet on a white plate"
         />
       </picture>
-      <h1>Simple Omelette Recipe</h1>
-      <p>
+      <h1 id="header--title">Simple Omelette Recipe</h1>
+      <p id="header--paragraph">
         An easy and quick dish, perfect for any meal. This classic omelette
         combines beaten eggs cooked to perfection, optionally filled with your
         choice of cheese, vegetables, or meats.
       </p>
-      <section>
-        <h2>Preparation time</h2>
-        <ul>
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
+      <section id="preparation_section">
+        <h2 id="preparation_section--title">Preparation time</h2>
+        <ul id="preparation_section--list">
+          <li class="preparation_section--list_item">
+            Total: Approximately 10 minutes
+          </li>
+          <li class="preparation_section--list_item">Preparation: 5 minutes</li>
+          <li class="preparation_section--list_item">Cooking: 5 minutes</li>
         </ul>
       </section>
     </header>
-    <main>
-      <section>
-        <h2>Ingredients</h2>
-        <ul>
-          <li>2-3 large eggs</li>
-          <li>Salt, to taste</li>
-          <li>Pepper, to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>
+    <main id="main">
+      <section id="ingredients">
+        <h2 id="ingredients--title">Ingredients</h2>
+        <ul id="ingredients--list">
+          <li class="ingredients--list_item">2-3 large eggs</li>
+          <li class="ingredients--list_item">Salt, to taste</li>
+          <li class="ingredients--list_item">Pepper, to taste</li>
+          <li class="ingredients--list_item">1 tablespoon of butter or oil</li>
+          <li class="ingredients--list_item">
             Optional fillings: cheese, diced vegetables, cooked meats, herbs
           </li>
         </ul>
       </section>
-      <hr />
-      <section>
-        <h2>Instructions</h2>
-        <ol type="1">
-          <li>
+      <hr class="line" />
+      <section id="instructions">
+        <h2 id="instructions--title">Instructions</h2>
+        <ol type="1" id="instructions--list">
+          <li class="instructions--list_item">
             Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
             pepper until they are well mixed. You can add a tablespoon of water
             or milk for a fluffier texture.
           </li>
-          <li>
+          <li class="instructions--list_item">
             Heat the pan: Place a non-stick frying pan over medium heat and add
             butter or oil.
           </li>
-          <li>
+          <li class="instructions--list_item">
             Cook the omelette: Once the butter is melted and bubbling, pour in
             the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
           </li>
-          <li>
+          <li class="instructions--list_item">
             Add fillings (optional): When the eggs begin to set at the edges but
             are still slightly runny in the middle, sprinkle your chosen
             fillings over one half of the omelette.
           </li>
-          <li>
+          <li class="instructions--list_item">
             Fold and serve: As the omelette continues to cook, carefully lift
             one edge and fold it over the fillings. Let it cook for another
             minute, then slide it onto a plate.
           </li>
-          <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+          <li class="instructions--list_item">
+            Enjoy: Serve hot, with additional salt and pepper if needed.
+          </li>
         </ol>
       </section>
-      <hr />
-      <section>
-        <h2>Nutrition</h2>
-        <p>
+      <hr class="line" />
+      <section id="nutrition">
+        <h2 id="nutrition--title">Nutrition</h2>
+        <p id="nutrition--paragraph">
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <table>
-          <tr>
+        <table id="nutrition--table">
+          <tr class="nutrition--table_row">
             <td>Calories</td>
             <td>277kcal</td>
           </tr>
-          <tr>
+          <tr class="nutrition--table_row">
             <td>Carbs</td>
             <td>0g</td>
           </tr>
-          <tr>
+          <tr class="nutrition--table_row">
             <td>Protein</td>
             <td>20g</td>
           </tr>
-          <tr>
+          <tr class="nutrition--table_row">
             <td>Fat</td>
             <td>22g</td>
           </tr>
         </table>
       </section>
     </main>
-    <footer>
-      <p>
+    <footer id="footer">
+      <p id="footer_content">
         &copy; 2026 Made by
         <a
           href="https://github.com/chrisperaza/"
