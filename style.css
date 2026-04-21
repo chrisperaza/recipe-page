@@ -1,5 +1,23 @@
 /* fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+/* 
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
 
 /* variables */
 :root {
@@ -15,4 +33,91 @@
   --brown: hsl(14, 45%, 36%);
   --rose: hsl(332, 51%, 32%);
   --rose-light: hsl(330, 100%, 98%);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-content);
+  color: var(--grey);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* header */
+#body,
+#header,
+#header--section,
+#preparation_section,
+#preparation_section--list {
+  display: flex;
+  flex-direction: column;
+}
+#body {
+  gap: 25px;
+}
+#header {
+  align-items: center;
+  gap: 25px;
+}
+#header--picture img {
+  width: 100%;
+}
+#header--section,
+#preparation_section {
+  align-items: center;
+}
+#header--section {
+  max-width: 90%;
+  gap: 20px;
+}
+h1 {
+  font-size: clamp(3rem, 5vw, 3rem);
+  line-height: 3rem;
+  color: var(--black);
+}
+#header--title,
+#header--paragraph,
+#preparation_section--title,
+#preparation_section--list,
+.preparation_section--list_item {
+  width: 100%;
+}
+#header--paragraph,
+.preparation_section--list_item {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  line-height: 1.8rem;
+}
+.preparation_section--list_item::marker {
+  color: var(--rose);
+}
+#preparation_section {
+  background-color: var(--rose-light);
+  width: 100%;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+#preparation_section--title {
+  font-size: clamp(1.5rem, 1.5vw, 1.8rem);
+  color: var(--rose);
+  font-weight: 600;
+}
+#preparation_section--list {
+  list-style-position: inside;
+  gap: 8px;
+  padding-left: 8px;
+}
+#header--title,
+#ingredients--title,
+#instructions--title,
+#nutrition--title {
+  font-family: var(--font-titles);
+  font-weight: 400;
+  font-style: normal;
 }
