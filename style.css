@@ -61,6 +61,7 @@ html {
   gap: 25px;
 }
 #header {
+  width: 100%;
   align-items: center;
   gap: 25px;
 }
@@ -69,10 +70,10 @@ html {
 }
 #header--section,
 #preparation_section {
+  width: 90%;
   align-items: center;
 }
 #header--section {
-  max-width: 90%;
   gap: 20px;
 }
 h1 {
@@ -97,8 +98,6 @@ h1 {
 }
 #preparation_section {
   background-color: var(--rose-light);
-  width: 100%;
-  max-width: 90%;
   padding: 20px;
   border-radius: 10px;
   gap: 10px;
