@@ -120,3 +120,54 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+/* main */
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.line {
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background-color: var(--grey-medium);
+}
+#ingredients,
+#instructions,
+#nutrition {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#ingredients--title,
+#instructions--title,
+#nutrition--title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--brown);
+}
+.ingredients--list_item,
+.instructions--list_item,
+#nutrition--paragraph,
+#nutrition--table {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  line-height: 1.8rem;
+}
+#ingredients--list,
+#instructions--list {
+  list-style-position: inside;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ingredients--list_item::marker,
+.instructions--list_item::marker {
+  color: var(--brown);
+}
+.instructions--list_item::marker {
+  font-weight: bold;
+}
