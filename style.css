@@ -173,6 +173,11 @@ h1 {
 #ingredients--list {
   list-style: none;
 }
+#instructions--list {
+  counter-reset: my_counter;
+  list-style: none;
+  padding: 0;
+}
 #ingredients--list,
 #instructions--list {
   list-style-position: inside;
@@ -197,4 +202,16 @@ h1 {
   content: '•';
   color: var(--brown);
   font-weight: bolder;
+}
+.instructions--list_item {
+  counter-increment: my_counter;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.instructions--list_item::before {
+  content: counter(my_counter) '.';
+  color: var(--brown);
+  font-weight: bolder;
+  width: 1em;
 }
