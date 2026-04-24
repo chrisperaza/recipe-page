@@ -59,6 +59,8 @@ html {
 }
 #body {
   gap: 25px;
+  max-width: 768px;
+  margin: 0 auto;
 }
 #header {
   width: 100%;
@@ -218,7 +220,8 @@ h1 {
 
 /* nutrition */
 .nutrition--table_row td {
-  text-align: center;
+  text-align: left;
+  padding-left: 15px;
   height: 30px;
   border-bottom: 1px solid #ddd;
 }
@@ -241,4 +244,21 @@ h1 {
 #footer_content a {
   color: var(--brown);
   font-weight: 500;
+}
+
+/* desktop view responsive */
+@media only screen and (min-width: 768px) {
+  html {
+    padding: 30px;
+  }
+  #header--picture {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #header--picture img {
+    border-radius: 20px;
+  }
+  .nutrition--table_row td {
+    padding-left: 30px;
+  }
 }
