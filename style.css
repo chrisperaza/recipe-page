@@ -215,3 +215,15 @@ h1 {
   font-weight: bolder;
   width: 1em;
 }
+
+/* nutrition */
+.nutrition--table_row td {
+  text-align: center;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nutrition--table_row :last-child {
+  color: var(--brown);
+  font-weight: bold;
+}
